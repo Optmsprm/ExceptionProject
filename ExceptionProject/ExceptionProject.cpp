@@ -19,7 +19,34 @@ int main()
     }
     catch (string exception)
     {
-        cout << exception << endl;
+        cout << exception;
+    }
+
+    try
+    {
+        cout << character('a', -1) << endl;
+    }
+    catch (string exception)
+    {
+        cout << exception;
+    }
+
+    try
+    {
+        cout << character('Z', -1) << endl;
+    }
+    catch (string exception)
+    {
+        cout << exception;
+    }
+
+    try
+    {
+        cout << character('?', 5) << endl;
+    }
+    catch (string exception)
+    {
+        cout << exception;
     }
 
 }
